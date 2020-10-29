@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Registrasi Mahasiswa</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<header class="py-5">
+		<div class="container">
+			<div class="text-center">
+				<h1 class="font-secondary">Form Registrasi Mahasiswa</h1>
+				<p>Harap isi data Anda dengan valid</p>
+				<hr>
+			</div>
+		</div>
+	</header>
+
+	<form action="">
+		<section class="mb-5">
+			<div class="container">
+				<div class="pb-3">
+					<h2>Informasi Pribadi</h2>
+				</div>
+				<div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nama-depan">Nama Depan</label>
+								<input type="email" class="form-control" id="nama-depan">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nama-belakang">Nama Belakang</label>
+								<input type="email" class="form-control" id="nama-belakang">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="notelp">No. Telp</label>
+								<input type="phone" class="form-control" id="notelp">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="alamat">Alamat</label>
+								<textarea class="form-control" name="alamat" id="alamat" rows="5"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="email">Email</label>
+								<input type="email" class="form-control" id="email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" id="password">
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="tempat-lahir">Tempat Lahir</label>
+								<select class="form-control" name="tempat-lahir" id="tempat-lahir">
+									<option value="">-- Pilih Tempat Lahir --</option>
+									<option value="bogor">Bogor</option>
+									<option value="bogor">Depok</option>
+									<option value="bogor">Jakarta</option>
+									<option value="bogor">Padang</option>
+									<option value="bogor">Malang</option>
+									<option value="bogor">Yogyakarta</option>
+									<option value="bogor">Surabaya</option>
+									<option value="bogor">Semarang</option>
+								</select>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="tanggal-lahir">Tanggal Lahir</label>
+								<input type="date" class="form-control" id="tanggal-lahir">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mb-5">
+			<div class="container">
+				<div class="pb-3">
+					<h2>Identitas Kampus</h2>
+				</div>
+				<div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nama-institusi">Nama Institusi</label>
+								<input type="text" class="form-control" id="nama-institusi">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nama-institusi">Sektor</label>
+								<select class="form-control" name="tempat-lahir" id="tempat-lahir">
+									<option value="">-- Pilih Sektor --</option>
+									<option value="bogor">Pertanian</option>
+									<option value="bogor">Teknologi</option>
+									<option value="bogor">Keuangan</option>
+									<option value="bogor">Pemerintahan</option>
+									<option value="bogor">Pendidikan</option>
+									<option value="bogor">Infrastruktur</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="warna-utama">Warna Utama</label>
+								<input type="color" class="form-control" id="warna-utama">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="nama-institusi">Jurusan</label>
+								<div class="form-group form-check">
+									<input type="checkbox" class="form-check-input" id="ti">
+									<label class="form-check-label" for="ti">Teknik Informatika</label>
+								</div>
+								<div class="form-group form-check">
+									<input type="checkbox" class="form-check-input" id="si">
+									<label class="form-check-label" for="si">Sistem Informasi</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="tahun-berdiri">Tahun Berdiri</label>
+								<input type="number" class="form-control" id="tahun-berdiri">
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="rating-kampus">Rating Kampus</label>
+								<input type="range" min="0" max="10" class="form-control-range" id="rating-kampus">
+							</div>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-md-6 offset-6 d-flex justify-content-end">
+							<button class="btn btn-primary btn-lg" type="submit">Submit</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</form>
+	<script src="../assets/js/bootstrap.min.js"></script>
+</body>
+</html>
